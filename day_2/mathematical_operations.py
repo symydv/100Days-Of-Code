@@ -1,0 +1,5 @@
+print(3+4)
+print(3-2)
+print(3*2)
+print(1/2)
+print(2**5)#(** is used to use exponents given function means 2 to the power 5)
