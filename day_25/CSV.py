@@ -8,16 +8,20 @@
 #this above code will provide us a list which is very hard to read
 #instead
 
-import csv
+# import csv
 
-with open("day_25/weather_data.csv") as data_file:
-    data = csv.reader(data_file)
-    tempretures = []
-    for row in data:
-        if row[1] != "temp":
-            tempretures.append(int(row[1]))
-    print(tempretures)
+# with open("day_25/weather_data.csv") as data_file:
+#     data = csv.reader(data_file)
+#     tempretures = []
+#     for row in data:
+#         if row[1] != "temp":
+#             tempretures.append(int(row[1]))
+#     print(tempretures)
 
 
 # using csv is very  lengthy so for data analysis we use pandas library
 
+import pandas
+
+data = pandas.read_csv("E:/code/python/100 days Code/day_25/weather_data.csv")
+print(data)
