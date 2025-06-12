@@ -1,0 +1,31 @@
+/* Font Size */
+    /* 1px = 1/96 inch
+    1pt = 1/72 inch
+    1em = 100% of parent
+    1rem = 100% of root */
+
+
+    /*
+        <!DOCTYPE html>
+        <html lang = "en"> 
+
+            <head>
+                <meta charset="UTF-8">
+                <title>My Website</title>
+                <link rel="stylesheet" href="./style.css" />
+            </head>
+            <body>
+                <h1>Hello World!</h1>
+            </body>
+
+        </html> 
+
+    */
+
+    /* Lets say the above is html code given 
+     if we set  h1{font-size = 1 em}  it means it is 100% of size of body elemnet which is its parent so if body is 20px then font size will bwe 20px.
+     
+     or if we  set h1{font size = 2rem} then it will no longer depend on body element rather it will depend on size of root element which is <html>
+     </html> so if html has size 30px h1 will have 200% of it means 60px */
+
+     

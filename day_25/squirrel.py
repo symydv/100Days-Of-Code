@@ -18,7 +18,7 @@ for rang in color:
 
 
 data = pandas.DataFrame(sq_color)
-data.to_csv("squirrel_count.csv ")
+data.to_csv("day_25/squirrel_count.csv ")
 print(data)
     
 #you can also use madam's code check day 25, 004

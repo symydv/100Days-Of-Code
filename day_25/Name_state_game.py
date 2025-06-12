@@ -37,10 +37,7 @@ while game_is_on :
     ans_state = screen.textinput(title=f"{len(ans_list)}/50 States correct", prompt="What's another State's name ?").title()
 
     if ans_state == 'Exit':
-        missing_states = []
-        for state in state_name:
-            if state not in ans_list:
-                missing_states.append(state) 
+        missing_states = [state for state in state_name if state not in ans_list] 
         print(missing_states)         
         break
     if  ans_state in state_name:
@@ -60,3 +57,4 @@ while game_is_on :
 
 
 
+ 

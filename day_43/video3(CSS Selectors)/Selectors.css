@@ -1,0 +1,61 @@
+  
+/* ELEMENT SELECTOR */
+  h1{
+      color: green;
+   }
+
+   /* color is property and blue is a value */
+   /* h1 is called CSS selector, perticularly it is an element selector as it is targeting all h1 in file */
+
+
+
+/* CLASS SELECTOR */
+   .red-heading{
+    color: red;
+   }
+
+   /* Now we hve a class red-heading which is also a class selector */
+   /* in itscorresponding html file if it is written like
+        <h2 class="red-heading">Red</h2>
+        <h2>Green<h2>
+        
+    then only the first h2 with class red-heading will turn red*/
+
+    /* even if our html got different elemnets with same class their color can be changed 
+    like
+        <h2 class="red-heading">Red</h2>
+        <p class="red-heading">Paragraph<p>
+        
+    here both will turn red*/
+
+
+
+/* ID SELECTOR */
+
+    #main{
+        color: red;
+    }
+    /* changes color of element with id attribute main
+    like
+        <h2 id="main">Red</h2>
+        <h2>Green<h2>
+    here first h2 with id = "main" will be red*/
+
+/* The difference between class selector and id selector is that there can be many elements with same class but an id atrribute is unique for every element, means there can be only one id = "main" */
+
+
+
+/* ATTRIBUTE SLECTOR */
+
+    p[draggable = "false"]{
+        color: red;
+    }
+    /* above code says all paragraph elements with attribute draggable set to false should be red   */
+
+
+/* UNIVERSAL SELECTOR */
+    *{
+        color: red;
+    }
+
+    /* make everything red */

@@ -82,4 +82,4 @@ data_dict = {
 data = pandas.DataFrame(data_dict)
 print(data)
 #we can also save it as a csv.
-data.to_csv("new_data.csv")
+data.to_csv("day_25/new_data.csv")

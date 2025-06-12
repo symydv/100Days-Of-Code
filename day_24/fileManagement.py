@@ -4,7 +4,7 @@ after closing and reopening the game'''
 
 
 
-file = open("my_file.txt")
+file = open("day_24/my_file.txt")
 y = file.read()
 print(y)
 file.close() 
@@ -16,7 +16,7 @@ file.close()
 #     content = file.read()
 #     print(content)
 
-with open("my_file.txt",mode="w") as file: #changed mode from read only to write
+with open("day_24/my_file.txt",mode="w") as file: #changed mode from read only to write
     file.write("New text.")                                       
 
 
@@ -25,12 +25,12 @@ be able to just add another text without deleting previos text
 we can use "a"  mode'''
     
 
-with open("my_file.txt",mode="a") as file: 
+with open("day_24/my_file.txt",mode="a") as file: 
     file.write("\nAnother new text.")
 
 
 #if a file doesnt exist it will create a new one for you
 
-with open("new_file.txt",mode="a") as file: 
+with open("day_24/new_file.txt",mode="a") as file: 
     file.write("New_file.")
 

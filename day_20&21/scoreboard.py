@@ -4,7 +4,7 @@ class Score(Turtle):
     def __init__(self):
         super().__init__()
         self.score = 0
-        with open("highScore.txt","r") as data:
+        with open("day_20&21/highScore.txt","r") as data:
             self.HS = int(data.read())
         self.color("white")
         self.up()
@@ -16,7 +16,7 @@ class Score(Turtle):
         self.score +=1
         if self.score > self.HS:
             self.HS = self.score
-        with open("highScore.txt", mode="w") as data:
+        with open("day_20&21/highScore.txt", mode="w") as data:
             data.write(f"{self.HS}")
 
         self.clear()

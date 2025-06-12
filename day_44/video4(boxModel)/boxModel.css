@@ -1,0 +1,22 @@
+/* Box modelsare like borders, padding, height etc */
+
+
+/* WE can add heigh and width as pixels as well as percentage of size of screen */
+
+/* border: 10px solid black;
+        border-top:0px
+    here 10px is thickness of boarder.
+    "solid" is style of boarder
+    "black" is color of border 
+    border-top:0px this line makes top of border 0 px
+    instead the second line if we wright border-width: 0px 10px 20px 30px
+    then it will make top 0px. right 10px, bottom 20px, and left 30 px means it goes clockwise*/
+    
+
+/* Padding pushes border outward by the given pixels , so it just adds space between border and inside element*/
+
+/* Margin is distance between border and other outside elements */
+
+
+/* there is a html element called content division element represented as -  <div></div>
+  they act as invisible box that can contain content , in between we can put as many elements as we wants  it will store all in one box */

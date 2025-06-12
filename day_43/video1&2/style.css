@@ -1,0 +1,7 @@
+
+   h1{
+      color: green;
+   }
+
+   /* color is property and blue is a value */
+   /* h1 is called CSS selector, perticularly it is an element selector as it is targeting all h1 in file */
