@@ -1,19 +1,23 @@
 #API can be free or  paid.
 #API key are used by api providers to track your use of api..
-
+ 
 import requests
+import os  #To setup environment variables.
+from dotenv import load_dotenv
+load_dotenv()
+
 from twilio.rest  import Client
 #For  Twilio ########################################################
-Account_SID = "ACc88bcf1f901edb2e17095bb04dae5813"
-Auth_token = "a25bee98f0d9ac46c3c451d30fae5f38"
-Twilio_phone_number = "+16507191050"
+Account_SID = os.environ.get("Account_SID")
+Auth_token = os.environ.get("Auth_token")
+Twilio_phone_number = os.environ.get("Twilio_phone_number")
 #################################################################
-
 
 MY_LAT = 16.833628 # Your latitude
 MY_LONG = 81.530850 # Your longitude
 
-api_key = "2d5869cc56dcd4d260a4480a4c153811" #this api key to use  current weather data.
+api_key = os.environ.get("ApiKey") #this api key to use  current weather data.
+
 
 
 req = requests.get("https://api.openweathermap.org/data/2.5/weather?lat=16.833628&lon=81.530850&appid=2d5869cc56dcd4d260a4480a4c153811")

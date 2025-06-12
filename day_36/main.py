@@ -1,11 +1,14 @@
 import requests
 from datetime import datetime, timedelta
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 
-news_apiKey = "6cd85f316003479b90235556140347e6"
-stock_apiKey = "2O3UZXPAJOZPHMYF"
+news_apiKey = os.environ.get("NewApiKey")
+stock_apiKey = os.environ.get("StockApiKey")
 
 
 
