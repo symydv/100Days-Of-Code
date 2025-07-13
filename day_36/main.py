@@ -59,8 +59,8 @@ print(resp)
 ##############################################################################################################################
 from twilio.rest  import Client
 
-Account_SID = "ACc88bcf1f901edb2e17095bb04dae5813"
-Auth_token = "a25bee98f0d9ac46c3c451d30fae5f38"
+Account_SID = os.environ.get("Account_SID")
+Auth_token = os.environ.get("Auth_token")
 Twilio_phone_number = "+16507191050"
 
 #Optional: Format the SMS message like this: 
